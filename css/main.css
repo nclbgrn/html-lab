@@ -1,11 +1,3 @@
-body {
-    background: linear-gradient(135deg, #314572 30%, #688dba 80%); /* Deep blue gradient for ethereal vibes */
-    font-family: 'Times New Roman', Times, serif;
-    color: #E6E6FA; /* Light lavender for text */
-    margin: 0;
-    padding: 20px;
-    line-height: 1.6; /* Improve readability */
-}
 header, footer {
     text-align: center;
     padding: 10px;
@@ -38,3 +30,32 @@ nav ul li a:hover {
         margin-bottom: 10px; /* Stack items vertically on smaller screens */
     }
 }
+/* ------ ABOUT ------ */
+section.about-page {
+    gap: 0;
+ }
+ body {
+    background: linear-gradient(135deg, #3b4b6a 30%, #8d83cd 80%);
+    font-family: 'Times New Roman', Times, serif;
+    color: #E6E6FA;
+    margin: 0;
+    padding: 20px;
+ }
+ nav ul li a {
+    text-decoration: none;
+    color: #f8f4f4; /* Light color for links */
+    font-size: 1.1em; /* Slightly larger font for emphasis */
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+.about-container {
+    display: flex;
+    align-items: center;
+}
+img {
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.profile-info {
+    line-height: 1.6;
+}
+ 

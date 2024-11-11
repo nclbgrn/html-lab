@@ -21,8 +21,24 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
+    font-size: 1.1em; /* Slightly larger font for emphasis */
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
 h2 {
     text-align: center;
+}
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #bcb5da, #c3d5fd); /* Gradient background */
+    color: #E6E6FA; /* Text color that complements the gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+p {
+    line-height: 1.6;
 }
