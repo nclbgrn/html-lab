@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(135deg, #314572, #688dba); /* Deep blue gradient for ethereal vibes */
+    background: linear-gradient(135deg, #314572 30%, #688dba 80%); /* Deep blue gradient for ethereal vibes */
     font-family: 'Times New Roman', Times, serif;
     color: #E6E6FA; /* Light lavender for text */
     margin: 0;
@@ -22,16 +22,14 @@ nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 nav ul li a {
     text-decoration: none;
     color: #f8f4f4; /* Light color for links */
     font-size: 1.1em; /* Slightly larger font for emphasis */
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
-
 nav ul li a:hover {
-    color: #E6E6FA; /* Light lavender on hover */
+    color: #E6E6FA; 
     transform: scale(1.1); /* Slight scale effect for hover interaction */
 }
 @media (max-width: 768px) {
