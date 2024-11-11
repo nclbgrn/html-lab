@@ -1,15 +1,12 @@
 body {
-    background: linear-gradient(135deg, #3b4b6a 30%, #8d83cd 80%);
-    font-family: 'Times New Roman', Times, serif; 
-    color: #E6E6FA;
+    background-color: #E6E6FA;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 20px;
 }
 header, footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Slight darkening for a more ethereal look */
-    color: #E6E6FA; /* Ensure visibility */
 }
 nav ul {
     list-style-type: none;
@@ -21,9 +18,7 @@ nav ul li {
 }
 nav ul li a {
     text-decoration: none;
-    color: #f8f4f4; /* Light color for links */
-    font-size: 1.1em; /* Slightly larger font for emphasis */
-    transition: color 0.3s ease, transform 0.3s ease; 
+    color: #333;
 }
 .about-container {
     display: flex;
