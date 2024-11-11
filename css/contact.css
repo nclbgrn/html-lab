@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(135deg, #6c5e89 30%, #b6a4f2 80%);
+    font-family: 'Times New Roman', Times, serif; 
+    color: #E6E6FA;
+    margin: 0;
+    padding: 20px;
+}
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight darkening for a more ethereal look */
+    color: #E6E6FA; /* Ensure visibility */
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+h2 {
+    text-align: center;
+}
