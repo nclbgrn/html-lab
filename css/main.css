@@ -1,9 +1,23 @@
+/* General Body Style */
+body {
+    background: linear-gradient(135deg, #314572 30%, #688dba 80%); /* Default deep blue gradient for index */
+    font-family: 'Times New Roman', Times, serif;
+    color: #E6E6FA;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header and Footer */
 header, footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Slight darkening for a more ethereal look */
-    color: #E6E6FA; /* Ensure visibility */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #E6E6FA;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for ethereal effect */
 }
+
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -14,39 +28,41 @@ nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
-    color: #f8f4f4; /* Light color for links */
-    font-size: 1.1em; /* Slightly larger font for emphasis */
+    color: #f8f4f4;
+    font-size: 1.1em;
     transition: color 0.3s ease, transform 0.3s ease; 
 }
+
 nav ul li a:hover {
-    color: #E6E6FA; 
-    transform: scale(1.1); /* Slight scale effect for hover interaction */
+    color: #e3dcfc; /* Light lavender hover effect */
+    transform: scale(1.1);
 }
+
+/* Responsive Navigation */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
-        margin-bottom: 10px; /* Stack items vertically on smaller screens */
+        margin-bottom: 10px;
+    }
+    body {
+        padding: 15px;
+        line-height: 1.8;
     }
 }
-/* ------ ABOUT ------ */
-section.about-page {
-    gap: 0;
- }
- body {
-    background: linear-gradient(135deg, #3b4b6a 30%, #8d83cd 80%);
-    font-family: 'Times New Roman', Times, serif;
-    color: #E6E6FA;
-    margin: 0;
-    padding: 20px;
- }
- nav ul li a {
-    text-decoration: none;
-    color: #f8f4f4; /* Light color for links */
-    font-size: 1.1em; /* Slightly larger font for emphasis */
-    transition: color 0.3s ease, transform 0.3s ease; 
+
+/* Index Page Background */
+.index-body {
+    background: linear-gradient(135deg, #314572 30%, #688dba 80%);
 }
+
+/* About Page Styles */
+.about-body {
+    background: linear-gradient(135deg, #3b4b6a 30%, #8d83cd 80%);
+}
+
 .about-container {
     display: flex;
     align-items: center;
@@ -58,4 +74,35 @@ img {
 .profile-info {
     line-height: 1.6;
 }
- 
+
+/* Projects Page Background */
+.projects-body {
+    background: linear-gradient(135deg, #463370 30%, #b6a4f2 80%);
+}
+
+/* Contacts Page Styles */
+.contacts-body {
+    background: linear-gradient(135deg, rgba(108, 94, 137, 0.9) 30%, rgba(182, 164, 242, 0.9) 80%);
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #E6E6FA;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #bcb5da, #c3d5fd);
+    color: #E6E6FA;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    line-height: 1.6;
+}
