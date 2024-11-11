@@ -1,12 +1,15 @@
 body {
-    background-color: #E6E6FA; 
-    font-family: 'Times New Roman', Times, serif, sans-serif; 
+    background: linear-gradient(135deg, #463370 30%, #b6a4f2 80%);
+    font-family: 'Times New Roman', Times, serif; 
+    color: #E6E6FA;
     margin: 0;
     padding: 20px;
 }
 header, footer {
     text-align: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight darkening for a more ethereal look */
+    color: #E6E6FA; /* Ensure visibility */
 }
 nav ul {
     list-style-type: none;
