@@ -84,7 +84,7 @@ img {
     padding: 20px;
     margin: 20px auto;
     max-width: 1100px;
-    background-color: #8f8299;
+    background: linear-gradient(135deg, #5f526f, #d4bfff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -136,7 +136,7 @@ img {
 
 /* Contacts Page Styles */
 .contacts-body {
-    background: linear-gradient(135deg, rgba(108, 94, 137, 0.9) 30%, rgba(182, 164, 242, 0.9) 80%);
+    background: linear-gradient(135deg, #735a8f 30%, #947f9c 80%);
 }
 
 h2 {
@@ -149,10 +149,12 @@ h2 {
 .contact-info {
     max-width: 600px;
     margin: auto;
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background: linear-gradient(135deg, #bcb5da, #c3d5fd);
+    background: linear-gradient(135deg, #9d86a4, #c3d5fd);
     color: #E6E6FA;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
