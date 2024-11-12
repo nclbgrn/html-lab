@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lora:wght@400;700&display=swap');
+
 /* General Body Style */
 body {
     background: linear-gradient(135deg, #314572 30%, #688dba 80%); /* Default deep blue gradient for index */
@@ -87,6 +88,9 @@ nav ul li a:hover {
 /* Index Page Background */
 .index-body {
     background: linear-gradient(135deg, #314572 30%, #688dba 80%);
+}
+img {
+    margin-top: 30px;
 }
 
 /* About Page Styles */
@@ -185,7 +189,7 @@ h2 {
     margin-top: 40px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    background: linear-gradient(135deg, #9d86a4, #c3d5fd);
+    background: linear-gradient(135deg, #9d86a4, #baa9d6);
     color: #E6E6FA;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
