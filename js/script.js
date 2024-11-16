@@ -1,7 +1,7 @@
 // Alert Button and Hover functionality
 const alertButton = document.getElementById("btn-alert");
 alertButton.addEventListener("click", function() {
-    alert("Hello world!");
+    alert("Alright, cool. Move on.");
 });
 alertButton.addEventListener("mouseover", function() {
     alertButton.innerHTML = "Hovered!";

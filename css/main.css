@@ -21,13 +21,26 @@ header, footer {
 /* Heading Typography */
 h1 {
     font-family: 'Lora', Georgia, serif;
-    font-size: 2.5em;
+    font-size: 3rem; /* Slightly larger for impact */
     font-weight: 700;
-    color: #ccd8f6;
+    color: #ccd8f6; /* Soft, pale lavender-blue */
     text-align: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.15em; /* Subtle spacing for elegance */
     margin-top: 20px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(199, 218, 252, 0.8), rgba(130, 157, 239, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 
+                 0 0 30px rgba(130, 157, 239, 0.6); /* Glow effect */
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.05); /* Subtle zoom on hover */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 
+                 0 0 40px rgba(130, 157, 239, 0.8); /* Enhanced glow */
 }
 
 h2, h3 {
