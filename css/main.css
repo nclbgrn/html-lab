@@ -223,3 +223,51 @@ p {
     outline: none;
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
+
+
+/* General Greeting Styling */
+h2 {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark translucent background to fit night theme */
+    color: #ccd8f6; /* Light lavender color for text */
+    font-size: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for ethereal effect */
+    transition: all 0.5s ease; /* Smooth transition for hover effect */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.8); /* Glowing text */
+}
+
+/* Hover effect */
+h2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.9); /* Stronger glowing effect */
+}
+
+/* Time-specific Greeting Variations */
+.morning {
+    background-color: rgba(90, 115, 150, 0.5); /* Light bluish tint for a gentle morning feel */
+}
+
+.afternoon {
+    background-color: rgba(125, 150, 190, 0.5); /* Subtle warm lavender tint for afternoon */
+}
+
+.evening {
+    background-color: rgba(45, 55, 85, 0.6); /* Soft dark blue for evening with a night-time vibe */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem; /* Adjusting size for mobile */
+        padding: 20px;
+    }
+}
+
