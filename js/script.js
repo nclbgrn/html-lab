@@ -5,10 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentPage.includes("index.html")) {
         // Index page specific logic
         if (document.body.classList.contains("index-body")) {
-            // Additional code for index.html if needed
         }
 
-        // Criterion: Modified DOM Text (Footer Year)
+        // Modified DOM Text (Footer Year)
         const footer = document.querySelector("#addate");
         if (footer) {
             const currentYear = new Date().getFullYear();

@@ -30,7 +30,7 @@ h1 {
     margin-bottom: 10px;
     text-transform: uppercase;
     background: linear-gradient(90deg, rgba(199, 218, 252, 0.8), rgba(130, 157, 239, 0.8));
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; /* Gradient text effect */
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 
                  0 0 30px rgba(130, 157, 239, 0.6); /* Glow effect */
@@ -161,27 +161,14 @@ img {
     margin: 20px 0;
 }
 
-/* Documents List */
-.documents-list {
-    list-style-type: none;
-    padding: 0;
+
+/* Images */
+.projects img {
+    display: block;  
+    margin: 0 auto;  /* Center images horizontally */
+    max-width: 100%; 
 }
 
-.documents-list li {
-    margin-bottom: 10px;
-    color: #fcfdff;
-}
-
-.documents-list a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-.documents-list a:hover {
-    color: #f7f8f8;
-}
 
 /* Contacts Page Styles */
 .contacts-body {
