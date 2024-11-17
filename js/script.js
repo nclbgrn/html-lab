@@ -65,9 +65,21 @@ document.addEventListener("DOMContentLoaded", () => {
         // Change background color when the user clicks on the profile picture
         const profileImage = document.querySelector('img');
         profileImage.addEventListener('click', function () {
-            document.body.style.background = 'linear-gradient(135deg, #5f4b8b 30%, #c8a8d8 80%)';
+            document.body.style.background = 'linear-gradient(135deg, #ffffff 30%, #688dba 80%)';
             alert("Ok bye.");
         });
+
+
+ // Loop for even/odd numbers list
+ const numbersList = document.getElementById("numbers"); // Assuming there is an <ol> with id="numbers" in HTML
+
+ for (let i = 1; i <= 12; i++) {
+     const listItem = document.createElement("li");
+     listItem.textContent = `${i} is ${i % 2 === 0 ? "even" : "odd"}`;
+     numbersList.appendChild(listItem);
+ }
+
+
     } else if (currentPage.includes("about.html")) {
         // About page specific logic
         const alertButtonAbout = document.getElementById("btn-alert2");
