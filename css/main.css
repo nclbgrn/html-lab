@@ -127,6 +127,7 @@ img {
 .projects-body {
     background: linear-gradient(135deg, #463370 30%, #b6a4f2 80%);
 }
+
 /* Content Section Styling */
 .projects {
     padding: 20px;
@@ -283,4 +284,5 @@ h2:hover {
         padding: 20px;
     }
 }
+
 
