@@ -2,7 +2,7 @@
 
 /* General Body Style */
 body {
-    background: linear-gradient(135deg, #314572 30%, #688dba 80%); /* Default deep blue gradient for index */
+    background: linear-gradient(135deg, #314572 30%, #688dba 80%);
     font-family: 'Poppins', Arial, sans-serif; /* Google Font with fallback */
     color: #E6E6FA;
     margin: 0;
@@ -21,19 +21,19 @@ header, footer {
 /* Heading Typography */
 h1 {
     font-family: 'Lora', Georgia, serif;
-    font-size: 3rem; /* Slightly larger for impact */
+    font-size: 3rem; 
     font-weight: 700;
-    color: #ccd8f6; /* Soft, pale lavender-blue */
+    color: #ccd8f6; 
     text-align: center;
-    letter-spacing: 0.15em; /* Subtle spacing for elegance */
+    letter-spacing: 0.15em; 
     margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
     background: linear-gradient(90deg, rgba(199, 218, 252, 0.8), rgba(130, 157, 239, 0.8));
     -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; /* Gradient text effect */
+    -webkit-text-fill-color: transparent; 
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.3), 
-                 0 0 30px rgba(130, 157, 239, 0.6); /* Glow effect */
+                 0 0 30px rgba(130, 157, 239, 0.6); 
     transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
@@ -291,13 +291,13 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 20px 0;
-    background-color: rgba(0, 0, 0, 0.4); /* Dark translucent background to fit night theme */
-    color: #ccd8f6; /* Light lavender color for text */
+    background-color: rgba(0, 0, 0, 0.4); 
+    color: #ccd8f6; 
     font-size: 3rem;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for ethereal effect */
-    transition: all 0.5s ease; /* Smooth transition for hover effect */
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.8); /* Glowing text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: all 0.5s ease; 
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.8); 
 }
 
 /* Hover effect */
