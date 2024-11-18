@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const alertButton = document.getElementById("btn-alert");
         if (alertButton) {
             alertButton.addEventListener("click", () => {
-                alert("K.");
+                alert("Alright, cool. Move on.");
             });
 
             alertButton.addEventListener("mouseover", () => {
@@ -31,19 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             console.error("Alert button with id 'btn-alert' not found.");
         }
-
-         // More Button Interaction
-         const numberslist = btnAlert = document.getElementById("btn-alert");
-         if (btnAlert) {
-             btnAlert.addEventListener("click", () => {
-                 const messages = [
-                     "Wait. Click the picture."
-                 ];
-                 const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-                 alert(randomMessage);
-             });
-         }
-
 
         // Portfolio Greeting based on the time of day
         let greeting = document.createElement("h2");
@@ -60,47 +47,55 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         document.body.insertBefore(greeting, document.body.firstChild);
 
+        // Additional Button Interaction
+        const btnAlert = document.getElementById("btn-alert");
+        if (btnAlert) {
+            btnAlert.addEventListener("click", () => {
+                const messages = ["Nvm. Click the picture."];
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                alert(randomMessage);
+            });
+        }
 
-
-        // Change background color when the user clicks on the profile picture
-        const profileImage = document.querySelector('img');
-        profileImage.addEventListener('click', function () {
-            document.body.style.background = 'linear-gradient(135deg, #ffffff 30%, #688dba 80%)';
-            alert("Alright cool, move on.");
-        });
-
-
-
- // Loop for even/odd numbers list
- const numbersList = document.getElementById("numbers"); // Assuming there is an <ol> with id="numbers" in HTML
-
- for (let i = 1; i <= 12; i++) {
-     const listItem = document.createElement("li");
-     listItem.textContent = `${i} is ${i % 2 === 0 ? "even" : "odd"}`;
-     numbersList.appendChild(listItem);
- }
-
-
-    } else if (currentPage.includes("about.html")) {
-        // About page specific logic
-        const alertButtonAbout = document.getElementById("btn-alert2");
-        if (alertButtonAbout) {
-            alertButtonAbout.addEventListener("click", function () {
+        // Change Background Color When Profile Image is Clicked
+        const profileImage = document.querySelector("img");
+        if (profileImage) {
+            profileImage.addEventListener("click", () => {
+                document.body.style.background = "linear-gradient(135deg, #ffffff 30%, #688dba 80%)";
                 alert("Ok bye.");
             });
+        } else {
+            console.error("Profile image not found.");
+        }
 
-            // Change button text when hovered
-            alertButtonAbout.addEventListener("mouseover", function () {
-                alertButtonAbout.innerHTML = "?"; 
+        // Loop for Even/Odd Numbers List
+        const numbersList = document.getElementById("numbers"); // Assuming <ol id="numbers">
+        if (numbersList) {
+            for (let i = 1; i <= 12; i++) {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${i} is ${i % 2 === 0 ? "even" : "odd"}`;
+                numbersList.appendChild(listItem);
+            }
+        } else {
+            console.error("Numbers list with id 'numbers' not found.");
+        }
+    } else if (currentPage.includes("about.html")) {
+        // About Page Specific Logic
+        const alertButtonAbout = document.getElementById("btn-alert2");
+        if (alertButtonAbout) {
+            alertButtonAbout.addEventListener("click", () => {
+                alert("Oh. You're still here.");
             });
 
-            // Restore original button text when mouse leaves
-            alertButtonAbout.addEventListener("mouseout", function () {
-                alertButtonAbout.innerHTML = "Don't click me"; 
+            alertButtonAbout.addEventListener("mouseover", () => {
+                alertButtonAbout.innerHTML = "?";
             });
+
+            alertButtonAbout.addEventListener("mouseout", () => {
+                alertButtonAbout.innerHTML = "Don't click me";
+            });
+        } else {
+            console.error("Alert button for about page not found.");
         }
     }
 });
-
-
-
