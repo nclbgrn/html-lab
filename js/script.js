@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const alertButtonAbout = document.getElementById("btn-alert2");
         if (alertButtonAbout) {
             alertButtonAbout.addEventListener("click", function () {
-                alert("Oh. Ok bye.");
+                alert("Ok bye.");
             });
 
             // Change button text when hovered
