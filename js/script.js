@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const alertButtonAbout = document.getElementById("btn-alert2");
         if (alertButtonAbout) {
             alertButtonAbout.addEventListener("click", () => {
-                alert("Why did you click me?");
+                alert("Next.");
             });
 
             alertButtonAbout.addEventListener("mouseover", () => {
