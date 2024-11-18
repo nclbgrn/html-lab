@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const alertButton = document.getElementById("btn-alert");
         if (alertButton) {
             alertButton.addEventListener("click", function () {
-                alert("Alright, cool. Move on.");
+                alert("Ok bye.");
             });
 
             alertButton.addEventListener("mouseover", () => {
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (profileImage) {
             profileImage.addEventListener("click", () => {
                 document.body.style.background = "linear-gradient(135deg, #ffffff 30%, #688dba 80%)";
-                alert("Ok bye.");
+                alert("Alright, cool. Move on.");
             });
         } else {
             console.error("Profile image not found.");
@@ -84,11 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const alertButtonAbout = document.getElementById("btn-alert2");
         if (alertButtonAbout) {
             alertButtonAbout.addEventListener("click", () => {
-                alert("Now go back to homepage and click the click me button again.");
+                alert("Why did you click me?");
             });
 
             alertButtonAbout.addEventListener("mouseover", () => {
-                alertButtonAbout.innerHTML = "?";
+                alertButtonAbout.innerHTML = "bruh";
             });
 
             alertButtonAbout.addEventListener("mouseout", () => {

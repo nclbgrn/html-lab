@@ -199,6 +199,89 @@ p {
     line-height: 1.6;
 }
 
+/* Social Media Section */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Social Media Section */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 3rem; /* Bigger icon size */
+    color: #fff; /* White icon color */
+    background-color: #5e4a75; /* Icon background */
+    width: 70px; /* Fixed width for icons */
+    height: 70px; /* Fixed height for icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Circle shape */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-media a:hover {
+    background-color: #d4bff9; /* Change background on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Add specific background colors for each platform */
+.social-media a[href*="instagram"] {
+    background-color: #e1306c; /* Instagram color */
+}
+
+.social-media a[href*="github"] {
+    background-color: #333; /* GitHub color */
+}
+
+.social-media a[href*="linkedin"] {
+    background-color: #0077b5; /* LinkedIn color */
+}
+
+.social-media a:hover[href*="instagram"] {
+    background-color: #ff69b4; /* Hover effect for Instagram */
+}
+
+.social-media a:hover[href*="github"] {
+    background-color: #444; /* Hover effect for GitHub */
+}
+
+.social-media a:hover[href*="linkedin"] {
+    background-color: #005a87; /* Hover effect for LinkedIn */
+}
+
 /* General Greeting Styling */
 h2 {
     text-align: center;
