@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Alert Button and Hover Functionality
         const alertButton = document.getElementById("btn-alert");
         if (alertButton) {
-            alertButton.addEventListener("click", () => {
+            alertButton.addEventListener("click", function () {
                 alert("Alright, cool. Move on.");
             });
 
