@@ -1,12 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Check the page URL to run page-specific JavaScript
     const currentPage = window.location.pathname;
 
     if (currentPage.includes("index.html")) {
-        // Index page specific logic
-        if (document.body.classList.contains("index-body")) {
-        }
-
         // Modified DOM Text (Footer Year)
         const footer = document.querySelector("#addate");
         if (footer) {
@@ -19,20 +14,36 @@ document.addEventListener("DOMContentLoaded", () => {
         // Console log to confirm page load
         console.log("Index page loaded, JavaScript is running.");
 
-        // Alert Button and Hover functionality
+        // Alert Button and Hover Functionality
         const alertButton = document.getElementById("btn-alert");
-        console.log("Alert button clicked!");
-        alertButton.addEventListener("click", function () {
-            alert("Alright, cool. Move on.");
-        });
+        if (alertButton) {
+            alertButton.addEventListener("click", () => {
+                alert("K.");
+            });
 
-        alertButton.addEventListener("mouseover", function () {
-            alertButton.innerHTML = "Sup";
-        });
+            alertButton.addEventListener("mouseover", () => {
+                alertButton.innerHTML = "Sup";
+            });
 
-        alertButton.addEventListener("mouseout", function () {
-            alertButton.innerHTML = "Click me";
-        });
+            alertButton.addEventListener("mouseout", () => {
+                alertButton.innerHTML = "Click me";
+            });
+        } else {
+            console.error("Alert button with id 'btn-alert' not found.");
+        }
+
+         // More Button Interaction
+         const numberslist = btnAlert = document.getElementById("btn-alert");
+         if (btnAlert) {
+             btnAlert.addEventListener("click", () => {
+                 const messages = [
+                     "Wait. Click the picture."
+                 ];
+                 const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                 alert(randomMessage);
+             });
+         }
+
 
         // Portfolio Greeting based on the time of day
         let greeting = document.createElement("h2");
@@ -49,24 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         document.body.insertBefore(greeting, document.body.firstChild);
 
-        // More Button Interaction
-        const numberslist = btnAlert = document.getElementById("btn-alert");
-        if (btnAlert) {
-            btnAlert.addEventListener("click", () => {
-                const messages = [
-                    "Nvm. Click the picture."
-                ];
-                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-                alert(randomMessage);
-            });
-        }
+
 
         // Change background color when the user clicks on the profile picture
         const profileImage = document.querySelector('img');
         profileImage.addEventListener('click', function () {
             document.body.style.background = 'linear-gradient(135deg, #ffffff 30%, #688dba 80%)';
-            alert("Ok bye.");
+            alert("Alright cool, move on.");
         });
+
 
 
  // Loop for even/odd numbers list
@@ -84,12 +86,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const alertButtonAbout = document.getElementById("btn-alert2");
         if (alertButtonAbout) {
             alertButtonAbout.addEventListener("click", function () {
-                alert("Oh. You're still here.");
+                alert("Oh. Ok bye.");
             });
 
             // Change button text when hovered
             alertButtonAbout.addEventListener("mouseover", function () {
-                alertButtonAbout.innerHTML = "Huh"; 
+                alertButtonAbout.innerHTML = "?"; 
             });
 
             // Restore original button text when mouse leaves
@@ -99,3 +101,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+
+
